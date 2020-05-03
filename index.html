@@ -1,131 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
-      crossorigin="anonymous"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <title>Work Day Scheduler</title>
-  </head>
 
-  <body>
-    <header class="jumbotron">
-      <h1 class="display-3">Work Day Scheduler</h1>
-      <p class="lead">A simple calendar app for scheduling your work day</p>
-      <p id="currentDay" class="lead"></p>
-    </header>
-    <div class="container">
-      <!-- Timeblocks go here -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Work Day Scheduler</title>
+</head>
 
-      <div class="row card">
-        <!--add col for time-->
-      <textarea class="card-body col-md-9">
-        This is some text within a card body.
+<body>
+  <header class="jumbotron">
+    <h1 class="display-3">Work Day Scheduler</h1>
+    <p class="lead">A simple calendar app for scheduling your work day</p>
+    <p id="currentDay" class="lead"></p>
+  </header>
+  <div class="container">
+    <!-- Timeblocks go here -->
+
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">8am</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
+
       </textarea>
-
-      <button type="button" class="btn btn-primary col-md-3">lock</button>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
       </div>
-      <div class="row card">
-        <div class="card-body col-md-1">9pm</div>
-      <textarea class="card-body col-md-10">
-        This is some text within a card body.
-      </textarea>
-      
-      <button type="button" class="btn btn-primary col-md-1">lock</button>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">9am</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
+
+        </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
       </div>
-      
-      <div class="row card">
-        <!--add col for time-->
-      <textarea class="card-body col-md-9">
-        This is some text within a card body.
-      </textarea>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">10am</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
-      <button type="button" class="btn btn-primary col-md-3">lock</button>
+          </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
       </div>
-      <div class="row card">
-        <div class="card-body col-md-1">9pm</div>
-      <textarea class="card-body col-md-10">
-        This is some text within a card body.
-      </textarea>
-      <span class="btn btn-primary col-md- 1 h-auto d-inline-block">locker</span>
-      
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">11am</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
+
+            </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
       </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">12pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
+              </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">1pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
+                </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">2pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
-<div class="row card" >
-  <div class="card-body col-md-1">9pm</div>
-<textarea class="card-body col-md-10">
-  This is some text within a card body.
-</textarea>
-<div class="col-md-1">
-  <div class="onoffswitch">
-    <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" checked>
-    <label class="onoffswitch-label" for="myonoffswitch">
-        <span class="onoffswitch-inner"></span>
-        <span class="onoffswitch-switch"></span>
-    </label>
-</div>
-</div>
-<!--<button type="button" class="btn btn-primary col-md-1">lock</button>-->
-</div>
+                  </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">3pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
+                    </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">4pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
 
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-  <label class="switch">
-    <input type="checkbox">
-    <span class="slider round"></span>
-  </label>
-</div>
-<div class="card">
-  <div class="card-body">
-    This is some text within a card body.
-  </div>
-</div>
-<ul class="list-group">
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Cras justo odio
-    <span class="btn btn-primary">lock</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Dapibus ac facilisis in
-    <span class="badge badge-primary badge-pill">2</span>
-  </li>
-  <li class="list-group-item d-flex justify-content-between align-items-center">
-    Morbi leo risus
-    <span class="badge badge-primary badge-pill">1</span>
-  </li>
-</ul>
+                      </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">5pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
+          sfgfhjkl
+                        </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
+    </div>
+    <div class="row card" style="height:100px;">
+      <div class="card-body col-md-1 border-top">6pm</div>
+      <textarea class="card-body col-md-10 border-right border-top" placeholder="Enter text here" id="textInputArea">
+
+                          </textarea>
+      <div class="col-md-1 border-top" style="height:100px;">
+        <button type="button" class="btn btn-primary rounded mx-auto d-block" id="lockButton">lock</button>
+      </div>
     </div>
 
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-  </body>
+
+
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
 </html>
