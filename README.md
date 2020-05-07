@@ -1,38 +1,22 @@
-# 05 Third-Party APIs: Work Day Scheduler
+# The Work Day Scheduler
 
-Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
+For this application, the user has requested for a calender type application specifically for work hours. The work day scheduler will indicate whether the time slot is in the past, present or future and also allows the user to save the tasks that they have put in so that they remain even after refreshing the page. 
 
-You'll need to use the [Moment.js](https://momentjs.com/) library to work with date and time. Be sure to read the documentation carefully and concentrate on using Moment.js in the browser.
 
-## User Story
+## Functionality
 
-```
-AS AN employee with a busy schedule
-I WANT to add important events to a daily planner
-SO THAT I can manage my time effectively
-```
+- The planner will allow the user to see the date at the top (refer to image below)
+- The planner has working hours of 8am - 5pm for the user to input text for tasks 
+- when a user clicks on a time block, they are able to input text for tasks they have planned
+- When the user clicks the 'lock' button, the text area is saved (whether after adding text or removing it) so that it even shows after refreshing the page
+- When text area will be colour coded to indicate whether the time slot is in the past (grey), in the future (green) or within the current hour (yellow)
+- This will update automatically if the user leaves the page open
 
-## Acceptance Criteria
+Access the quiz here:[Workday Scheduler URL](https://christofulee.github.io/chris-homework-W4/)
 
-```
-GIVEN I am using a daily planner to create a schedule
-WHEN I open the planner
-THEN the current day is displayed at the top of the calendar
-WHEN I scroll down
-THEN I am presented with timeblocks for standard business hours
-WHEN I view the timeblocks for that day
-THEN each timeblock is color coded to indicate whether it is in the past, present, or future
-WHEN I click into a timeblock
-THEN I can enter an event
-WHEN I click the save button for that timeblock
-THEN the text for that event is saved in local storage
-WHEN I refresh the page
-THEN the saved events persist
-```
 
-The following animation demonstrates the application functionality:
-
-![day planner demo](./Assets/05-third-party-apis-homework-demo.gif)
+## Image example of the work day scheduler
+![day planner exapmle](./Assets/Window.png)
 
 ## Review
 
