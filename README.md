@@ -12,7 +12,7 @@ For this application, the user has requested for a calender type application spe
 - When text area will be colour coded to indicate whether the time slot is in the past (grey), in the future (green) or within the current hour (yellow)
 - This will update automatically if the user leaves the page open
 
-Access the quiz here:[Workday Scheduler URL](https://christofulee.github.io/chris-homework-W4/)
+Access the quiz here:[Workday Scheduler URL](https://christofulee.github.io/chris-homework-W5/)
 
 
 ## Image example of the work day scheduler
