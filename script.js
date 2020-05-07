@@ -1,5 +1,43 @@
 $(document).ready(function() {
+    const container = $('.container')
 
+    $(".saveBtn").on('click', function() {
+        
+        console.log("clicked");
+        const task = $(this).parent().siblings(".task").val();
+        const time = $(this).parent().parent().attr("id");
+
+        localStorage.setItem(time, task);
+    });
+
+    $("#hour8 .task").val(localStorage.getItem("8"));
+    $("#hour9 .task").val(localStorage.getItem("9"));
+
+        //keep going and do the above for all the different times
+
+
+        $("#currentDay").text(moment().format("dddd"))
+
+        function hourCheck() {
+        const currentHour = moment().format("kk")
+            //loop over and if statement 
+
+        }
+        hourCheck();
+
+    // we can check if the currentHour above is less than or more than the idi.e 8, 9, 10 etc. 
+
+    // we will need to add a class to every row/div of past or future. an if statement could be used to remove the aforementioned class depending on the time comparision. 
+    // so the css you apply to past classes for example would only appear if they had the past class and therefore past and future would be different
+
+
+
+
+
+
+
+
+/*
     const container = $('.container')
     // const textInputArea1 = $('#textInputArea1')
     // const textInputArea = $('#textInputArea')
@@ -173,7 +211,7 @@ createSchedule()
             
             
             
-            /*// const textInputArea1 = $('#textInputArea1')
+            // const textInputArea1 = $('#textInputArea1')
             // const textInputArea = $('#textInputArea')
             // textInputArea1.addClass('bg-secondary');
             
@@ -184,61 +222,61 @@ createSchedule()
                 // $("textarea").each(colourChange)
                 
                 
-                const container = $('.container')
+//                 const container = $('.container')
                 
 
-function createButton() {}
-function createButtonDiv() {}
-function createTextarea(rowDiv, i) {
-    const textareaDiv = document.createElement('textarea')
-    textareaDiv.setAttribute
-}
+// function createButton() {}
+// function createButtonDiv() {}
+// function createTextarea(rowDiv, i) {
+//     const textareaDiv = document.createElement('textarea')
+//     textareaDiv.setAttribute
+// }
 
-function createTimeDiv(rowDiv, i) {
-    const timeDiv = document.createElement('div')
-    timeDiv.setAttribute('class', 'card-body col-md-1 border-top')
-    timeDiv.textContent = i + 9 + ":00"
-    rowDiv.append(timeDiv)
-    createTextarea(rowDiv, i)
+// function createTimeDiv(rowDiv, i) {
+//     const timeDiv = document.createElement('div')
+//     timeDiv.setAttribute('class', 'card-body col-md-1 border-top')
+//     timeDiv.textContent = i + 9 + ":00"
+//     rowDiv.append(timeDiv)
+//     createTextarea(rowDiv, i)
     
-}
+// }
 
-function createRow(originalDiv, i) {
-    const rowDiv = $("<div>");
-    rowDiv.attr("class", "row card");
-    rowDiv.attr("style", "height:100px");
-    rowDiv.text("rowDiv Test");
-    originalDiv.append(rowDiv);
-    createTimeDiv(rowDiv, i)
-    console.log(rowDiv)
-}
-
-
+// function createRow(originalDiv, i) {
+//     const rowDiv = $("<div>");
+//     rowDiv.attr("class", "row card");
+//     rowDiv.attr("style", "height:100px");
+//     rowDiv.text("rowDiv Test");
+//     originalDiv.append(rowDiv);
+//     createTimeDiv(rowDiv, i)
+//     console.log(rowDiv)
+// }
 
 
-function createSchedule() {
-    let divIndex = 0
-    const originalDiv = document.createElement('div')
-    originalDiv.setAttribute('id', 'original')
-    originalDiv.textContent = 'test Div'
-    container.append(originalDiv)
+
+
+// function createSchedule() {
+//     let divIndex = 0
+//     const originalDiv = document.createElement('div')
+//     originalDiv.setAttribute('id', 'original')
+//     originalDiv.textContent = 'test Div'
+//     container.append(originalDiv)
 
     
     
 
-    for (var i = 0; i < 10; i++) {
+//     for (var i = 0; i < 10; i++) {
         
-        createRow(originalDiv, i)
+//         createRow(originalDiv, i)
 
-    }
-
-
+//     }
 
 
-}
 
 
-createSchedule()
+// }
+
+
+// createSchedule()
 
 
 
