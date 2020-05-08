@@ -42,6 +42,10 @@ $(document).ready(function() {
 
         }
         hourCheck();
-        window.setInterval(hourCheck, 1000)
+        // window.setInterval(hourCheck, 1000)
 
     })
+
+    /* add if ($(this).hasClass("")){
+            $(this).addClass("");
+            $(this).removeClass(""); to each function to update the colours automatically without refreshing

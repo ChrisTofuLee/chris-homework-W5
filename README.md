@@ -10,7 +10,7 @@ For this application, the user has requested for a calender type application spe
 - when a user clicks on a time block, they are able to input text for tasks they have planned
 - When the user clicks the 'lock' button, the text area is saved (whether after adding text or removing it) so that it even shows after refreshing the page
 - When text area will be colour coded to indicate whether the time slot is in the past (grey), in the future (green) or within the current hour (yellow)
-- This will update automatically if the user leaves the page open
+
 
 Access the quiz here:[Workday Scheduler URL](https://christofulee.github.io/chris-homework-W5/)
 
